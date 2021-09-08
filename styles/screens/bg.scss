@@ -1,0 +1,16 @@
+.bg {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/Bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  &__title {
+    color: #fcf7f7;
+    max-width: 1110px;
+    -webkit-text-stroke: 4px #73777a;
+  }
+}

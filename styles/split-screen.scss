@@ -1,0 +1,42 @@
+.split-screen {
+  &--40 {
+    width: 40%;
+    padding: 23px 33px;
+    background-color: #2299ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media(medium) {
+      padding: 46px 67px;
+    }
+
+    @include media(large) {
+      padding: 93px 135px;
+    }
+  }
+
+  &--60 {
+    width: 60%;
+    padding: 150px 40px 35px 40px;
+    position: relative;
+
+    @include media(medium) {
+      padding: 150px 80px 75px 84px;
+    }
+    @include media(large) {
+      padding: 150px 160px 150px 84px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 488px;
+    height: auto;
+    max-height: 894px;
+    background-image: url(../images/screenshot.png);
+    background-position: center;
+    background-size: 78%;
+    background-repeat: no-repeat;
+  }
+}

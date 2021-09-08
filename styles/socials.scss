@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  column-gap: 45px;
+  row-gap: 60px;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__icon {
+    width: 35px;
+    height: 35px;
+    background-color: #2299ef;
+    border-radius: 50px;
+
+    @include media(medium) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
