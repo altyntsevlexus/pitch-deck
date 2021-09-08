@@ -433,21 +433,54 @@ a {
   }
 }
 
-.bg {
-  padding: 0 50px;
+.team {
+  padding: 150px 55px 150px 55px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-image: url(../images/Bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1920px) {
+  .team {
+    padding: 345px 55px 275px 140px;
+    flex-direction: row;
+  }
+}
+.team__about {
+  max-width: 525px;
+  margin-right: 0;
+  margin-bottom: 100px;
   text-align: center;
 }
-.bg__title {
-  color: #fcf7f7;
-  max-width: 1110px;
-  -webkit-text-stroke: 4px #73777a;
+@media only screen and (min-width: 1920px) {
+  .team__about {
+    margin-right: 80px;
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 28px;
+  row-gap: 60px;
+}
+.team__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  min-width: 300px;
+  text-align: center;
+}
+@media only screen and (min-width: 1920px) {
+  .team__item {
+    min-width: 545px;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: start;
+  }
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=team.css.map */
