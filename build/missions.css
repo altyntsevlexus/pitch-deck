@@ -433,6 +433,11 @@ a {
   }
 }
 
+.mission-list__item, .mission-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .split-screen--40 {
   width: 40%;
   padding: 23px 33px;
@@ -466,16 +471,6 @@ a {
     padding: 150px 160px 150px 84px;
   }
 }
-.split-screen__image {
-  width: 100%;
-  max-width: 488px;
-  height: auto;
-  max-height: 894px;
-  background-image: url(../images/screenshot.png);
-  background-position: center;
-  background-size: 78%;
-  background-repeat: no-repeat;
-}
 
 .mission__split-screen {
   background-image: url(../images/mission.png);
@@ -487,13 +482,9 @@ a {
 }
 
 .mission-list {
-  display: flex;
-  flex-direction: column;
   gap: 50px;
 }
 .mission-list__item {
-  display: flex;
-  flex-direction: column;
   gap: 23px;
   max-width: 820px;
 }

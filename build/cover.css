@@ -433,6 +433,11 @@ a {
   }
 }
 
+.socials__item, .socials {
+  display: flex;
+  flex-direction: row;
+}
+
 .split-screen--40 {
   width: 40%;
   padding: 23px 33px;
@@ -466,16 +471,6 @@ a {
     padding: 150px 160px 150px 84px;
   }
 }
-.split-screen__image {
-  width: 100%;
-  max-width: 488px;
-  height: auto;
-  max-height: 894px;
-  background-image: url(../images/screenshot.png);
-  background-position: center;
-  background-size: 78%;
-  background-repeat: no-repeat;
-}
 
 .cover__title {
   margin-bottom: 55px;
@@ -490,18 +485,24 @@ a {
     max-height: 290px;
   }
 }
+.cover__iphone {
+  width: 100%;
+  max-width: 488px;
+  height: auto;
+  max-height: 894px;
+  background-image: url(../images/screenshot.png);
+  background-position: center;
+  background-size: 78%;
+  background-repeat: no-repeat;
+}
 
 .socials {
-  display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  flex-direction: row;
   column-gap: 45px;
   row-gap: 60px;
 }
 .socials__item {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 30px;
 }

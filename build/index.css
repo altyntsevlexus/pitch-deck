@@ -434,15 +434,18 @@ a {
 }
 
 .bg {
-  padding: 0 50px;
   display: flex;
   flex-direction: column;
+}
+
+.bg {
+  padding: 0 50px;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-image: url(../images/Bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 }
 .bg__title {
   color: #fcf7f7;

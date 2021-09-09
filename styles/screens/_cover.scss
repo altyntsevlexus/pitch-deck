@@ -12,19 +12,30 @@
       max-height: 290px;
     }
   }
+
+  &__iphone {
+    width: 100%;
+    max-width: 488px;
+    height: auto;
+    max-height: 894px;
+    background: {
+      image: url(../images/screenshot.png);
+      position: center;
+      size: 78%;
+      repeat: no-repeat;
+    }
+  }
 }
 
 .socials {
-  display: flex;
+  @extend %flex-row;
   flex-wrap: wrap;
   align-items: flex-start;
-  flex-direction: row;
   column-gap: 45px;
   row-gap: 60px;
 
   &__item {
-    display: flex;
-    flex-direction: row;
+    @extend %flex-row;
     align-items: center;
     gap: 30px;
   }

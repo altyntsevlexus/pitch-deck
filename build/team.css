@@ -433,11 +433,14 @@ a {
   }
 }
 
+.team__item, .team {
+  display: flex;
+  flex-direction: column;
+}
+
 .team {
   padding: 150px 55px 150px 55px;
-  display: flex;
   align-items: center;
-  flex-direction: column;
 }
 @media only screen and (min-width: 1920px) {
   .team {
@@ -447,15 +450,13 @@ a {
 }
 .team__about {
   max-width: 525px;
-  margin-right: 0;
-  margin-bottom: 100px;
+  margin: 0 0 100px 0;
   text-align: center;
 }
 @media only screen and (min-width: 1920px) {
   .team__about {
-    margin-right: 80px;
+    margin: 0 80px 0 0;
     text-align: start;
-    margin-bottom: 0;
   }
 }
 .team__list {
@@ -466,10 +467,8 @@ a {
   row-gap: 60px;
 }
 .team__item {
-  display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   gap: 35px;
   min-width: 300px;
   text-align: center;
