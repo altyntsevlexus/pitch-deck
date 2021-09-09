@@ -52,5 +52,27 @@
         </ul>
       </main>
     </section>
+    <script>
+      class User {
+        name = "Аноним";
+        constructor() {
+          this.secondName = "alex";
+        }
+        static surname = "Anonymus";
+
+        sayHi() {
+          alert(`Привет, ${this.name}, ${User.surname}`);
+        }
+      }
+
+      class Admin extends User {}
+
+      const user = new User("alex");
+      const admin = new Admin();
+
+      console.log(admin);
+      console.log(user);
+      user.sayHi();
+    </script>
   </body>
 </html>
