@@ -1,14 +1,22 @@
 .split-screen {
-  &--40 {
-    width: 40%;
+  @extend %flex-column;
+
+  @include media(medium) {
+    flex-direction: row;
+  }
+
+  &__40 {
+    width: 100%;
+    min-height: 350px;
     padding: 23px 33px;
-    background-color: #2299ef;
+    background-color: $primary;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @include media(medium) {
       padding: 46px 67px;
+      width: 40%;
     }
 
     @include media(large) {
@@ -16,13 +24,13 @@
     }
   }
 
-  &--60 {
-    width: 60%;
+  &__60 {
+    width: 100%;
     padding: 150px 40px 35px 40px;
-    position: relative;
 
     @include media(medium) {
       padding: 150px 80px 75px 84px;
+      width: 60%;
     }
     @include media(large) {
       padding: 150px 160px 150px 84px;

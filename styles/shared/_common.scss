@@ -3,8 +3,12 @@
     family: Nunito, Arial, Helvetica, sans-serif;
     weight: 400;
   }
-  color: #4f4f4f;
+  color: $text-dark;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: $light;
 }
 
 li {
@@ -67,9 +71,3 @@ a {
     font-size: 34px;
   }
 }
-
-// @include media(medium) {
-// }
-
-// @include media(large) {
-// }

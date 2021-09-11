@@ -1,9 +1,10 @@
 @import "shared/normalize";
 @import "shared/mixins";
 @import "shared/fonts";
+@import "shared/colors";
 @import "shared/common";
 @import "shared/placeholders";
 
 @import "shared/split-screen";
 
-@import "screens/missions";
+@import "screens/mission";

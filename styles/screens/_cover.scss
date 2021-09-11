@@ -1,13 +1,19 @@
 .cover {
+  text-align: center;
+
+  @include media(medium) {
+    text-align: start;
+  }
+
   &__title {
     margin-bottom: 55px;
   }
 
   &__description {
-    max-width: 900px;
     margin-bottom: 60px;
 
-    @include media(large) {
+    @include media(medium) {
+      max-width: 905px;
       height: 100%;
       max-height: 290px;
     }
@@ -31,24 +37,42 @@
   @extend %flex-row;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
   column-gap: 45px;
   row-gap: 60px;
+  max-width: 905px;
 
-  &__item {
-    @extend %flex-row;
-    align-items: center;
-    gap: 30px;
+  @include media(medium) {
+    justify-content: flex-start;
   }
 
-  &__icon {
+  &__item {
+    @extend %flex-column;
+    align-items: center;
+    gap: 30px;
+
+    @include media(medium) {
+      flex-direction: row;
+    }
+  }
+
+  &__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 35px;
     height: 35px;
-    background-color: #2299ef;
+    background-color: $primary;
     border-radius: 50px;
 
     @include media(medium) {
       width: 70px;
       height: 70px;
     }
+  }
+
+  &__icon {
+    width: 50%;
+    height: 50%;
   }
 }

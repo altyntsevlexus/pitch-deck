@@ -366,6 +366,10 @@ a {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 li {
   list-style: none;
 }
@@ -433,13 +437,24 @@ a {
   }
 }
 
-.socials__item, .socials {
+.socials__item, .split-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
   display: flex;
   flex-direction: row;
 }
 
-.split-screen--40 {
-  width: 40%;
+@media only screen and (min-width: 1000px) {
+  .split-screen {
+    flex-direction: row;
+  }
+}
+.split-screen__40 {
+  width: 100%;
+  min-height: 350px;
   padding: 23px 33px;
   background-color: #2299ef;
   display: flex;
@@ -447,40 +462,49 @@ a {
   justify-content: center;
 }
 @media only screen and (min-width: 1000px) {
-  .split-screen--40 {
+  .split-screen__40 {
     padding: 46px 67px;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 1920px) {
-  .split-screen--40 {
+  .split-screen__40 {
     padding: 93px 135px;
   }
 }
-.split-screen--60 {
-  width: 60%;
+.split-screen__60 {
+  width: 100%;
   padding: 150px 40px 35px 40px;
-  position: relative;
 }
 @media only screen and (min-width: 1000px) {
-  .split-screen--60 {
+  .split-screen__60 {
     padding: 150px 80px 75px 84px;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 1920px) {
-  .split-screen--60 {
+  .split-screen__60 {
     padding: 150px 160px 150px 84px;
   }
 }
 
+.cover {
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .cover {
+    text-align: start;
+  }
+}
 .cover__title {
   margin-bottom: 55px;
 }
 .cover__description {
-  max-width: 900px;
   margin-bottom: 60px;
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1000px) {
   .cover__description {
+    max-width: 905px;
     height: 100%;
     max-height: 290px;
   }
@@ -499,24 +523,43 @@ a {
 .socials {
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
   column-gap: 45px;
   row-gap: 60px;
+  max-width: 905px;
+}
+@media only screen and (min-width: 1000px) {
+  .socials {
+    justify-content: flex-start;
+  }
 }
 .socials__item {
   align-items: center;
   gap: 30px;
 }
-.socials__icon {
+@media only screen and (min-width: 1000px) {
+  .socials__item {
+    flex-direction: row;
+  }
+}
+.socials__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 35px;
   height: 35px;
   background-color: #2299ef;
   border-radius: 50px;
 }
 @media only screen and (min-width: 1000px) {
-  .socials__icon {
+  .socials__circle {
     width: 70px;
     height: 70px;
   }
+}
+.socials__icon {
+  width: 50%;
+  height: 50%;
 }
 
 /*# sourceMappingURL=cover.css.map */

@@ -366,6 +366,10 @@ a {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 li {
   list-style: none;
 }

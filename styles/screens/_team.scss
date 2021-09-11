@@ -2,6 +2,7 @@
   @extend %flex-column;
   padding: 150px 55px 150px 55px;
   align-items: center;
+  justify-content: center;
 
   @include media(large) {
     padding: 345px 55px 275px 140px;
@@ -25,6 +26,7 @@
     justify-content: center;
     column-gap: 28px;
     row-gap: 60px;
+    max-width: 1200px;
   }
 
   &__item {

@@ -1,9 +1,16 @@
 .mission {
+  text-align: center;
+
+  @include media(medium) {
+    text-align: start;
+  }
+
   &__split-screen {
     background: {
       image: url(../images/mission.png);
       repeat: no-repeat;
       size: cover;
+      position: center;
     }
   }
 
@@ -19,7 +26,10 @@
   &__item {
     @extend %flex-column;
     gap: 23px;
-    max-width: 820px;
+
+    @include media(medium) {
+      max-width: 820px;
+    }
   }
   &__title {
     font-weight: 700;
