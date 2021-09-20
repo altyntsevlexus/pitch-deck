@@ -501,12 +501,17 @@ a {
 }
 .cover__description {
   margin-bottom: 60px;
+  height: initial;
 }
 @media only screen and (min-width: 1000px) {
   .cover__description {
     max-width: 905px;
-    height: 100%;
     max-height: 290px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .cover__description {
+    height: 100%;
   }
 }
 .cover__iphone {

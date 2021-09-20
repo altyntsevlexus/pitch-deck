@@ -11,11 +11,15 @@
 
   &__description {
     margin-bottom: 60px;
+    height: initial;
 
     @include media(medium) {
       max-width: 905px;
-      height: 100%;
       max-height: 290px;
+    }
+
+    @include media(large) {
+      height: 100%;
     }
   }
 
