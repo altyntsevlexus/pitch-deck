@@ -447,7 +447,7 @@ a {
     flex-direction: row;
   }
 }
-.split-screen__40 {
+.split-screen__left {
   width: 100%;
   min-height: 350px;
   padding: 23px 33px;
@@ -457,28 +457,28 @@ a {
   justify-content: center;
 }
 @media only screen and (min-width: 1000px) {
-  .split-screen__40 {
+  .split-screen__left {
     padding: 46px 67px;
     width: 40%;
   }
 }
 @media only screen and (min-width: 1920px) {
-  .split-screen__40 {
+  .split-screen__left {
     padding: 93px 135px;
   }
 }
-.split-screen__60 {
+.split-screen__right {
   width: 100%;
   padding: 150px 40px 35px 40px;
 }
 @media only screen and (min-width: 1000px) {
-  .split-screen__60 {
+  .split-screen__right {
     padding: 150px 80px 75px 84px;
     width: 60%;
   }
 }
 @media only screen and (min-width: 1920px) {
-  .split-screen__60 {
+  .split-screen__right {
     padding: 150px 160px 150px 84px;
   }
 }
@@ -491,7 +491,7 @@ a {
     text-align: start;
   }
 }
-.mission__split-screen {
+.mission__aside {
   background-image: url(../images/mission.png);
   background-repeat: no-repeat;
   background-size: cover;
