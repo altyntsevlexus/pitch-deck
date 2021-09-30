@@ -1,18 +1,32 @@
 .split-screen {
   @extend %flex-column;
+  text-align: center;
 
   @include media(medium) {
     flex-direction: row;
+    text-align: start;
   }
 
-  &__left {
+  &__aside {
     width: 100%;
     min-height: 350px;
     padding: 23px 33px;
-    background-color: $primary;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: {
+      repeat: no-repeat;
+      size: cover;
+      position: center;
+    }
+
+    &--m--d-none {
+      display: none;
+
+      @include media(medium) {
+        display: block;
+      }
+    }
 
     @include media(medium) {
       padding: 46px 67px;
@@ -24,16 +38,16 @@
     }
   }
 
-  &__right {
+  &__main {
     width: 100%;
-    padding: 150px 40px 35px 40px;
+    padding: 150px 40px 35px;
 
     @include media(medium) {
-      padding: 150px 80px 75px 84px;
+      padding: 150px 74px 75px;
       width: 60%;
     }
     @include media(large) {
-      padding: 150px 160px 150px 84px;
+      padding: 150px 74px;
     }
   }
 }

@@ -359,7 +359,7 @@ a {
   font-weight: 800;
   src: url(../fonts/nunito-v16-latin-800.woff2);
 }
-.socials__description, .socials__item, .cover__main-alt, .split-screen {
+.info-list__item, .split-screen {
   display: flex;
   flex-direction: column;
 }
@@ -524,93 +524,60 @@ a {
   }
 }
 
-.circle {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  background-color: #2299ef;
-  border-radius: 50px;
-}
-@media only screen and (min-width: 1000px) {
-  .circle {
-    width: 70px;
-    height: 70px;
-  }
-}
-.circle__icon {
-  width: 50%;
-  height: 50%;
+.info-title {
+  margin-bottom: 71px;
 }
 
-.cover__aside {
-  background-image: url(../images/cover.png);
-}
-.cover__aside-alt {
-  background-image: url(../images/cover-alt.png);
-}
-.cover__aside-primary {
-  background-color: #2299ef;
-}
-.cover__main-alt {
-  justify-content: center;
-}
-.cover__title {
-  margin-bottom: 55px;
-}
-.cover__description {
-  margin-bottom: 60px;
-  height: initial;
-  font-weight: 400;
-}
-@media only screen and (min-width: 1000px) {
-  .cover__description {
-    max-width: 905px;
-    max-height: 290px;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .cover__description {
-    height: 100%;
-  }
-}
-.cover__iphone {
-  width: 100%;
-  max-width: 488px;
-  height: auto;
-  max-height: 894px;
-  background-image: url(../images/screenshot.png);
-  background-position: center;
-  background-size: 78%;
-  background-repeat: no-repeat;
-}
-
-.socials {
+.info-list {
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 45px;
-  row-gap: 60px;
-  max-width: 905px;
+  gap: 55px;
 }
 @media only screen and (min-width: 1000px) {
-  .socials {
+  .info-list {
     justify-content: flex-start;
   }
 }
-.socials__item {
-  align-items: center;
-  gap: 30px;
-}
-@media only screen and (min-width: 1000px) {
-  .socials__item {
-    flex-direction: row;
-  }
-}
-.socials__description {
+.info-list__item {
+  max-width: 455px;
+  width: 100%;
   gap: 20px;
 }
+.info-list__title {
+  font-weight: 700;
+}
+.info-list__description {
+  height: 155px;
+}
+@media only screen and (min-width: 1000px) {
+  .info-list__description {
+    height: 185px;
+  }
+}
 
-/*# sourceMappingURL=cover.css.map */
+.corner-img {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .corner-img {
+    display: initial;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .corner-img {
+    width: initial;
+  }
+}
+.corner-img--pos--r {
+  right: 0;
+}
+.corner-img--pos--l {
+  left: 0;
+}
+
+/*# sourceMappingURL=competition.css.map */

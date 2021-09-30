@@ -1,8 +1,19 @@
 .cover {
-  text-align: center;
+  &__aside {
+    background-image: url(../images/cover.png);
+  }
 
-  @include media(medium) {
-    text-align: start;
+  &__aside-alt {
+    background-image: url(../images/cover-alt.png);
+  }
+
+  &__aside-primary {
+    background-color: $primary;
+  }
+
+  &__main-alt {
+    @extend %flex-column;
+    justify-content: center;
   }
 
   &__title {
@@ -12,6 +23,7 @@
   &__description {
     margin-bottom: 60px;
     height: initial;
+    font-weight: 400;
 
     @include media(medium) {
       max-width: 905px;
@@ -38,9 +50,8 @@
 }
 
 .socials {
-  @extend %flex-row;
+  display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: center;
   column-gap: 45px;
   row-gap: 60px;
@@ -60,23 +71,8 @@
     }
   }
 
-  &__circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background-color: $primary;
-    border-radius: 50px;
-
-    @include media(medium) {
-      width: 70px;
-      height: 70px;
-    }
-  }
-
-  &__icon {
-    width: 50%;
-    height: 50%;
+  &__description {
+    @extend %flex-column;
+    gap: 20px;
   }
 }

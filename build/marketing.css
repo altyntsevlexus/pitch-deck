@@ -359,7 +359,7 @@ a {
   font-weight: 800;
   src: url(../fonts/nunito-v16-latin-800.woff2);
 }
-.socials__description, .socials__item, .cover__main-alt, .split-screen {
+.marketing__item, .marketing, .split-screen {
   display: flex;
   flex-direction: column;
 }
@@ -545,72 +545,51 @@ a {
   height: 50%;
 }
 
-.cover__aside {
-  background-image: url(../images/cover.png);
-}
-.cover__aside-alt {
-  background-image: url(../images/cover-alt.png);
-}
-.cover__aside-primary {
-  background-color: #2299ef;
-}
-.cover__main-alt {
-  justify-content: center;
-}
-.cover__title {
-  margin-bottom: 55px;
-}
-.cover__description {
-  margin-bottom: 60px;
-  height: initial;
-  font-weight: 400;
+.corner-img {
+  position: absolute;
+  bottom: 0;
+  display: none;
 }
 @media only screen and (min-width: 1000px) {
-  .cover__description {
-    max-width: 905px;
-    max-height: 290px;
+  .corner-img {
+    display: initial;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 1920px) {
-  .cover__description {
-    height: 100%;
+  .corner-img {
+    width: initial;
   }
 }
-.cover__iphone {
-  width: 100%;
-  max-width: 488px;
-  height: auto;
-  max-height: 894px;
-  background-image: url(../images/screenshot.png);
-  background-position: center;
-  background-size: 78%;
-  background-repeat: no-repeat;
+.corner-img--pos--r {
+  right: 0;
+}
+.corner-img--pos--l {
+  left: 0;
 }
 
-.socials {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 45px;
-  row-gap: 60px;
-  max-width: 905px;
+.marketing {
+  align-items: center;
+  gap: 60px;
 }
 @media only screen and (min-width: 1000px) {
-  .socials {
-    justify-content: flex-start;
+  .marketing {
+    align-items: flex-start;
   }
 }
-.socials__item {
+.marketing__item {
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 @media only screen and (min-width: 1000px) {
-  .socials__item {
+  .marketing__item {
+    align-items: flex-start;
     flex-direction: row;
   }
 }
-.socials__description {
-  gap: 20px;
+.marketing__title {
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-/*# sourceMappingURL=cover.css.map */
+/*# sourceMappingURL=marketing.css.map */

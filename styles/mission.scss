@@ -1,10 +1,14 @@
-@import "shared/normalize";
-@import "shared/variables";
-@import "shared/mixins";
-@import "shared/fonts";
-@import "shared/common";
-@import "shared/templates";
+//base
+@import "base/normalize";
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/templates";
+@import "base/common";
 
+//shared
 @import "shared/split-screen";
+@import "shared/info-block";
 
+//screens
 @import "screens/mission";
